@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexomotion | Movilidad Inteligente</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f2f2;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #1abc9c, #3498db);
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    header img {
+      height: 80px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      flex-wrap: wrap;
+    }
+    nav a {
+      margin: 1rem;
+      text-decoration: none;
+      color: #3498db;
+      font-weight: bold;
+    }
+    .section {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .hero {
+      text-align: center;
+    }
+    .hero img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .contact, .pricing {
+      background-color: #eaf4fc;
+      padding: 2rem;
+      border-radius: 10px;
+      margin-top: 2rem;
+    }
+    footer {
+      background-color: #3498db;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    .whatsapp-button {
+      background-color: #25D366;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+    .language-switch {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+    .language-switch button {
+      margin: 0 0.5rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function switchLanguage(lang) {
+      const es = document.querySelectorAll('.es');
+      const en = document.querySelectorAll('.en');
+      if (lang === 'es') {
+        es.forEach(e => e.style.display = 'block');
+        en.forEach(e => e.style.display = 'none');
+      } else {
+        es.forEach(e => e.style.display = 'none');
+        en.forEach(e => e.style.display = 'block');
+      }
+    }
+    window.onload = () => switchLanguage('es');
+  </script>
+</head>
+<body>
+  <div class="language-switch">
+    <button onclick="switchLanguage('es')">Español</button>
+    <button onclick="switchLanguage('en')">English</button>
+  </div>
+
+  <header>
+    <img src="logo.jpg" alt="Logo Nexomotion" />
+    <h1>Nexomotion</h1>
+    <p class="es">"Movilidad inteligente para una logística eficiente"</p>
+    <p class="en">"Smart mobility for efficient logistics"</p>
+  </header>
+
+  <nav>
+    <a href="#nosotros" class="es">Nosotros</a>
+    <a href="#producto" class="es">Producto</a>
+    <a href="#precios" class="es">Precios</a>
+    <a href="#contacto" class="es">Contacto</a>
+    <a href="#nosotros" class="en">About</a>
+    <a href="#producto" class="en">Product</a>
+    <a href="#precios" class="en">Pricing</a>
+    <a href="#contacto" class="en">Contact</a>
+  </nav>
+
+  <section class="section hero">
+    <img src="producto.jpg" alt="Palet Inteligente Nexomotion" />
+  </section>
+
+  <section class="section" id="nosotros">
+    <h2 class="es">Sobre Nosotros</h2>
+    <h2 class="en">About Us</h2>
+    <p class="es">En Nexomotion nos especializamos en soluciones automatizadas de logística. Nuestro enfoque es brindar herramientas inteligentes que faciliten la eficiencia de los procesos de carga, transporte y almacenamiento. Nuestro producto estrella, el palet automático, redefine la forma en que se mueve la carga dentro de bodegas y centros de distribución.</p>
+    <p class="en">At Nexomotion we specialize in automated logistics solutions. Our goal is to provide smart tools that improve efficiency in loading, transportation, and storage processes. Our flagship product, the smart pallet, revolutionizes how cargo is moved inside warehouses and distribution centers.</p>
+  </section>
+
+  <section class="section" id="producto">
+    <h2 class="es">Palet Automático Inteligente</h2>
+    <h2 class="en">Smart Automatic Pallet</h2>
+    <p class="es">Diseñado para operar sin necesidad de grúas horquilla, el palet inteligente de Nexomotion es autónomo, seguro y optimiza los tiempos de traslado. Cuenta con sensores avanzados, conexión inalámbrica y gran capacidad de carga.</p>
+    <p class="en">Designed to operate without forklifts, Nexomotion’s smart pallet is autonomous, safe, and optimizes transport times. It features advanced sensors, wireless connectivity, and high load capacity.</p>
+  </section>
+
+  <section class="section pricing" id="precios">
+    <h2 class="es">Precios y Cotizaciones</h2>
+    <h2 class="en">Pricing & Quotes</h2>
+    <p class="es">Contáctanos para conocer precios personalizados según la cantidad de unidades o integración con tu sistema logístico.</p>
+    <p class="en">Contact us for customized pricing depending on quantity or integration with your logistics system.</p>
+    <a class="whatsapp-button" href="https://wa.me/56953563062" target="_blank">WhatsApp</a>
+  </section>
+
+  <section class="section contact" id="contacto">
+    <h2 class="es">Contacto</h2>
+    <h2 class="en">Contact</h2>
+    <p class="es">Correo: <a href="mailto:contactos.nexomotion@gmail.com">contactos.nexomotion@gmail.com</a></p>
+    <p class="en">Email: <a href="mailto:contactos.nexomotion@gmail.com">contactos.nexomotion@gmail.com</a></p>
+    <p>WhatsApp: <a href="https://wa.me/56953563062" target="_blank">+56 9 5356 3062</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nexomotion. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
